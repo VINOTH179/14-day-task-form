@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background:linear-gradient(rgba(0,0,0,0.45),
+    rgba(0,0,0,0.7)),url(./wp1917119-netflix-wallpapers.jpg);
+    background-position: top;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+header{
+    height: 6.2em;
+    padding-bottom: 1%;
+    width: 100vw;
+    max-width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.02));
+    margin: 0;
+}
+header.logo{
+    max-width: 235%;
+    padding-left: 5%;
+    padding-top: 1.5em;
+    filter:brightness(1.1);
+    color: #e50914;
+}
+header.logo a{
+    color: #5a67df;
+    text-align: left;
+    margin: 0 0 20px;
+
+}
+
+.wrapper{
+    background: rgba(0, 0, 0, 0.73);
+    color: #737373;
+    width: 28.2em;
+    max-width: 100%;
+    padding: 60px 68px 40px;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+form{
+    padding-bottom: 14%;
+}
+form h1{
+    color: #fff;
+    text-align: left;
+    margin: 0 0 20px;
+}
+form.inputbox{
+    position: absolute;
+}
+.inputtext{
+    font-size: 14px;
+    width: 100%;
+    height: 35px;
+    outline: none;
+    background: #333;
+    color: #fff;
+    margin: 8.5px auto;
+    font-weight: 500;
+}
+#email{
+    padding: 16px 20px 0;
+}
+#password{
+    padding: 16px 20px 020px;
+}
+.floating-label{
+    color: #8c8c8c;
+    position: sticky;
+    pointer-events: none;
+    left: 20px;
+    top: 25px;
+    transition: 0.25 ease;
+    border: none;
+}
+.inputtext,
+.submit-btn{
+    border: none;
+    font-size: 16;
+    width: 100%;
+    border-radius: 4px;
+    height: 50px;
+    line-height: 50px;
+}
+.showhide{
+    position: absolute;
+    top: 26px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60px;
+    color: #8c8c8c;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 99;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    visibility: hidden;
+}
+input:valid~.showhide,
+input:focus~.showhide{
+    visibility: visible;
+}
+input:focus~.floating-label,
+input:not(:focus):valid~.floating-label{
+    top: 16px;
+    bottom: 10px;
+    left: 20px;
+    font-size: 11px;
+    opacity: 1;
+
+}
+input:focus,
+input:valid{
+    background: #454545;
+}
+.submit-btn{
+    background: #e50914;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10%;
+    margin-bottom: -3px;
+    padding: 1.02em 1.2em;
+    line-height: 0;
+    cursor: pointer;
+}
+.submit-btn a{
+
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 3px;
+    padding-left: 3px;
+    text-decoration: none;
+
+}
+.remem-help{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.remem-help p a{
+    display: flex;
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 3px;
+    padding-left: 3px;
+    text-decoration: none;
+}
+.remem-help p a:hover{
+    text-decoration: underline;
+}
+.remem-help.remember input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.remem-help.remember{
+    display: block;
+    position: relative;
+    padding-top: 19px;
+    padding: 20px;
+    font-size: 13.5px;
+    color: #b3b3b3;
+}
+.remem-help .remember.checkmark{
+    position: absolute;
+    top: 17px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+    background: #737373;
+    font-size: 13px;
+}
+.remember input:checked~.checkmark{
+    background: #fff;
+}
+.remem-help.remember.checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+    left: 4.5px;
+    top: 1px;
+    width: 4px;
+    height: 9px;
+    border-width: 03px 3.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.remem-help.remember input:checked~.checkmark::after{
+    display: block;
+}
+.form-bottom{
+    padding: 002.5em;
+}
+.form-bottom.signupnow p{
+    display: flex;
+    width: 100%;
+}
+.form-bottom.signupnow p a{
+    color: #fff;
+    padding-left: 3px;
+    text-decoration: none;
+}
+.form-bottom.recaptcha p{
+    font-size: 13px;
+    color: #8c8c8c;
+    line-height: 16px;
+}
+.form-bottom.recaptcha p a{
+    display: inline;
+    width: 100%;
+    text-decoration: none;
+    color: #0071eb;
+}
+.form-bottom.recaptcha p a:hover{
+    text-decoration: underline;
+}
